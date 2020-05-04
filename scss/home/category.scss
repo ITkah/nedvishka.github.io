@@ -1,0 +1,97 @@
+.category-container {
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: url(../img/home/category/palm-1.svg);
+        position: absolute;
+        top: -15px;
+        left: 30%;
+    }
+    &::after {
+        content: url(../img/home/category/palm-2.svg);
+        position: absolute;
+        top: -30px;
+        right: 120px;
+    }
+    .slick-prev:before {
+        content: url(../img/icon/left.svg);
+    }
+    .slick-next:before {
+        content: url(../img/icon/right.svg);
+    }
+    .slick-prev:before, .slick-next:before {
+        font-size: 0;
+        opacity: 1;
+    }
+    .slick-prev {
+        z-index: 2;
+        right: 65px;
+        left: auto;
+        top: -40px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    .slick-next {
+        z-index: 2;
+        right: 20px;
+        left: auto;
+        top: -40px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
+        background: linear-gradient(90.19deg, #FE4C4C 1.96%, #FF7E21 96.6%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+}
+
+
+.category-box {
+    position: relative;
+    padding: 20px 5px;
+    height: 400px;
+    border-radius: 25px;
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .category-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .category-icon {
+        position: relative;
+        z-index: 2;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    p {
+        position: relative;
+        z-index: 2;
+        color: #2591F4;
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        font: 1.5rem 'gilroy-bold';
+    }
+}

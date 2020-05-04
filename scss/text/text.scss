@@ -1,0 +1,20 @@
+.title-sm {
+    background: linear-gradient(266.67deg, #12CAD6 10%, rgb(5, 113, 214) 90%);
+    color: rgb(12, 122, 224);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -2px 1px 10px #ECECEC;
+    letter-spacing: .2px;
+    margin-bottom: 25px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    font: 2rem 'gilroy-exbold';
+    @media (max-width: 990px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width: 576px) {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}

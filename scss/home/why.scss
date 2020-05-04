@@ -1,0 +1,97 @@
+
+
+.why-container {
+    background: #fefdfc;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    .title-sm {
+        position: relative;
+        z-index: 3;
+        padding: 35px 30px;
+    }
+    .cload-top {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+    .panorama {
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+        height: auto;
+        top: -50px;
+    }
+    .cload-bottom {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+    .why-box {
+        background: url(../img/home/why/letter.png) no-repeat center center;
+        background-size: contain;
+        height: 160px;
+        position: relative;
+        z-index: 3;
+        margin: 0 20px 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:hover {
+            .why-text {
+                opacity: 1;
+            }
+        }
+        .why-box-img:nth-child(2n+1){
+            position: relative;
+            top: -60px;
+        }
+        .why-box-img:nth-child(2n+2){
+            position: relative;
+            top: -60px;
+        }
+        .why-text {
+            color: #000;
+            font: 1.1rem/27px "gilroy-medium";
+            text-align: center;
+            margin: 10px 0;
+            opacity: 0;
+            transition: .3s;
+            @media (max-width: 1600px) {
+                font-size: .9rem;
+                line-height: 22px;
+            }
+            span {
+                color: #12cad6;
+            }
+        }
+        .why-box-img {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            img {
+                @media (max-width: 1300px) {
+                    height: 100px;
+                }
+            }
+        }
+        .why-box-img:first-child{
+            left: 0;
+            position: relative;
+            @media (max-width: 1200px) {
+                left: 0;
+            }
+        }
+        .why-box-img:last-child{
+            right: 0;
+            position: relative;
+            @media (max-width: 1200px) {
+                right: 0;
+            }
+        }
+    }
+}
