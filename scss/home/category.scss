@@ -1,6 +1,7 @@
 .category-container {
     background: #fff;
-    padding: 35px 30px;
+    padding: 35px 25px;
+    padding-right: 0;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
@@ -28,7 +29,7 @@
     }
     .slick-prev {
         z-index: 2;
-        right: 65px;
+        right: 70px;
         left: auto;
         top: -40px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
@@ -42,7 +43,7 @@
     }
     .slick-next {
         z-index: 2;
-        right: 20px;
+        right: 30px;
         left: auto;
         top: -40px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
@@ -54,6 +55,17 @@
         width: 30px;
         border-radius: 50%;
     }
+    .slick-list {
+        padding: 0 40px 0 0!important;
+        position: relative;
+    }
+}
+
+
+.category-wrap-slider {
+    position: relative;
+    width: 100.75%;
+    left: -0.75%;
 }
 
 
@@ -91,7 +103,7 @@
         color: #2591F4;
         position: absolute;
         bottom: 30px;
-        left: 20px;
+        left: 15px;
         font: 1.5rem 'gilroy-bold';
     }
 }

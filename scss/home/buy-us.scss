@@ -1,6 +1,6 @@
 .buy-us-container {
     background: #fff;
-    padding: 35px 30px;
+    padding: 35px 20px;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
@@ -16,7 +16,7 @@
     }
     .slick-prev {
         z-index: 2;
-        right: 65px;
+        right: 70px;
         left: auto;
         top: -40px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
@@ -30,7 +30,7 @@
     }
     .slick-next {
         z-index: 2;
-        right: 20px;
+        right: 30px;
         left: auto;
         top: -40px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
@@ -68,9 +68,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 15px;
+    padding: 80px 10px;
     position: relative;
-    z-index: 2;
+    z-index: 99;
 }
 
 .buy-us-slider {
@@ -207,22 +207,21 @@
         }
     }
     .buy-review-info-box {
-        display: grid;
-        grid-template-columns: 3fr 2fr;
-        grid-gap: 15px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
         margin-bottom: 20px;
         .buy-review-photo {
             img {
                 max-width: 100%;
-                height: auto;
+                height: 95px;
                 border-radius: 20px;
                 object-fit: cover;
             }
         }
         .buy-review-link {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
+            margin: 0 auto;
+            display: block;
             a {
                 cursor: pointer;
             }
@@ -231,28 +230,33 @@
     .specital-title {
         color: #4F4F4F;
         font: 1.125rem "gilroy-bold";
-        margin-bottom: 5px;
         @media (max-width: 1280px) {
             font-style: .95rem;
         }
     }
     .special-box-wrap {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 8px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
         .special-box {
             position: relative;
             cursor: pointer;
+            width: 49%;
+            margin: 5px 0;
             &:hover {
                 .special-hover {
                     opacity: 1;
-                    z-index: 9;
+                    z-index: 99;
                 }
             }
             .special-name {
                 font: .95rem "gilroy-light";
                 font-style: italic;
                 text-decoration-line: underline;
+                @media (max-width: 1280px) {
+                    font-size: .87rem;
+                }
             }
             .special-hover {
                 opacity: 0;
@@ -260,13 +264,12 @@
                 padding: 10px;
                 display: flex;
                 transition: .3s;
-                width: 260px;
+                width: 255px;
                 align-items: center;
                 justify-content: space-between;
-                background: #FFFFFF;
+                background: #FFF;
                 border-radius: 10px;
-                left: -40px;
-                z-index: -9;
+                left: -90px;
                 top: -75px;
                 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
                 &::before {
@@ -305,38 +308,13 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 9;
+    z-index: 999;
     margin-top: 0;
+    top: -30px;
+    @media (max-width: 990px) {
+        top: 0;
+    }
     a {
         margin: 0 10px;
-    }
-    .btn-transp{
-        padding: 10px 15px;
-        background: #fff;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 32px;
-        font: 1rem 'gilroy-medium';
-        color: #12b9d6;
-        position: relative;
-        padding-right: 20px;
-        transition: .3s;
-        &::after {
-            content: url(../img/home/buy/right.svg);
-            position: absolute;
-            right: 6px;
-            top: 32%;
-        }
-    }
-    .btn-dark {
-        padding: 10px 15px;
-        background: linear-gradient(268.71deg, #12CAD6 44.69%, #12B3D6 98.38%);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 32px;
-        font: 1rem 'gilroy-medium';
-        color: #fff;
-        transition: .3s;
-        &:hover {
-            box-shadow: none;
-        }
     }
 }

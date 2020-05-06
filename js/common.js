@@ -28,7 +28,10 @@ $(document).ready(function() {
         dots: true,
         arrows: false,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
     });
     
 
@@ -166,6 +169,8 @@ $(document).ready(function() {
         dots: false,
         arrows: true,
         infinite: true,
+        centerMode: true,
+        centerPadding: '40px',
         speed: 300,
         slidesToShow: 5,
         slidesToScroll: 2,
@@ -201,6 +206,8 @@ $(document).ready(function() {
         speed: 300,
         slidesToShow: 5,
         slidesToScroll: 2,
+        centerMode: true,
+        centerPadding: '40px',
         responsive: [
             {
                 breakpoint: 1800,

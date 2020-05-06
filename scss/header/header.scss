@@ -53,6 +53,16 @@ nav {
     }
 }
 
+.header-phone-flag {
+    display: flex;
+    align-items: center;
+    img {
+        height: 14px;
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+}
+
 .header-info {
     display: flex;
     flex-direction: column;
@@ -147,10 +157,12 @@ nav {
     left: -5px;
     position: absolute;
     background: #FCF9F9;
-    padding: 10px 5px 5px 5px;
+    padding: 5px;
     border-radius: 0px 0px 10px 10px;
     a {
-        margin-bottom: 10px;
         display: block;
+    } 
+    .header-phone-flag {
+        margin-bottom: 6px;   
     }
 }
