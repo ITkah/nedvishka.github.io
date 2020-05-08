@@ -86,33 +86,50 @@
                 </div> 
             </header>
             <main>
-                <section class="main-section padding margin">
+                <section class="main-section-wrap padding margin">
                     <div class="container">
-                        <div class="main-section-container">
-                            <div class="main-secrtion-slider main-section slide">
-                                <div>
-                                    <div class="main-secrtion-slider-box">
-                                        <p class="slider-title">Heading</p>
-                                        <p class="slider-text">Suspendisse commodo in sodales lectus nunc at sed lacinia ac. Gravida consequat faucibus mauris neque in morbi a. Ipsum porttitor cras tincidunt vitae.</p>
+                        <div class="main-section slide">
+                            <div>
+                                <div class="main-section-container" style="background: url(../img/home/main-section/main-bg.png) no-repeat center center;">
+                                    <div class="main-secrtion-slider">
+                                        <div class="main-secrtion-slider-box">
+                                            <p class="slider-title">Heading</p>
+                                            <p class="slider-text">Suspendisse commodo in sodales lectus nunc at sed lacinia ac. Gravida consequat faucibus mauris neque in morbi a. Ipsum porttitor cras tincidunt vitae.</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <div class="main-secrtion-slider-box">
-                                        <p class="slider-title">Heading</p>
-                                        <p class="slider-text">Suspendisse commodo in sodales lectus nunc at sed lacinia ac. Gravida consequat faucibus mauris neque in morbi a. Ipsum porttitor cras tincidunt vitae.</p>
+                                    <div class="main-link-wrap">
+                                        <a href="#" class="main-link-info">
+                                            <div class="main-link-info-box">
+                                                <p>Поиск курортной<br>
+                                                недвижимости<br>
+                                                начинается</p>
+                                                <img src="img/home/main-section/this.svg" alt="icon">
+                                            </div>
+                                            <img src="img/home/main-section/human.png" class="human" alt="human">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="main-link-wrap">
-                                <a href="#" class="main-link-info">
-                                    <div class="main-link-info-box">
-                                        <p>Поиск курортной<br>
-                                        недвижимости<br>
-                                        начинается</p>
-                                        <img src="img/home/main-section/this.svg" alt="icon">
+                            <div>
+                                <div class="main-section-container" style="background: url(../img/home/main-section/main-bg.png) no-repeat center center;">
+                                    <div class="main-secrtion-slider">
+                                        <div class="main-secrtion-slider-box">
+                                            <p class="slider-title">Heading2</p>
+                                            <p class="slider-text">Suspendisse commodo in sodales lectus nunc at sed lacinia ac. Gravida consequat faucibus mauris neque in morbi a. Ipsum porttitor cras tincidunt vitae.</p>
+                                        </div>
                                     </div>
-                                    <img src="img/home/main-section/human.png" class="human" alt="human">
-                                </a>
+                                    <div class="main-link-wrap">
+                                        <a href="#" class="main-link-info">
+                                            <div class="main-link-info-box">
+                                                <p>Поиск курортной<br>
+                                                недвижимости<br>
+                                                начинается</p>
+                                                <img src="img/home/main-section/this.svg" alt="icon">
+                                            </div>
+                                            <img src="img/home/main-section/human.png" class="human" alt="human">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -127,105 +144,295 @@
                             </ul>
                             
                             <div class="tabs__content active">
-                                <form class="tab-wrap">
-                                    <div class="btn-filter-wrap">
-                                        <a href="#" class="btn-fiter active">Продажа</a>
-                                        <a href="#" class="btn-fiter">Аренда</a>
-                                    </div>
-                                    <div class="box-select select-first">
-                                        <p class="select-title">Тип объекта</p>
-                                        <div class="select">
-                                            <select name="type">
-                                                <option value="">Выберите...</option>
-                                                <option value="1">Тест</option>
-                                            </select>
-                                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.90439 0.303613L0.504395 1.70361L6.50439 7.70361L12.5044 1.70361L11.1044 0.303613L6.50439 4.90361L1.90439 0.303613Z" fill="#12A7D6"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="box-select">
-                                        <div class="box-select-title">
-                                            <span class="prompt">
-                                                Первая цифра - количество спален Вторая цифра - количество гостиных В 95% гостиная совмещена с кухней
-                                            </span>
-                                            <p class="select-title">Планировка</p>
-                                            <svg width="16" class="call-prompt" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="8.15088" cy="13.0533" r="7.5" fill="#FE674C"/>
-                                                <path d="M8.35888 10.4465C8.04688 10.4465 7.79488 10.3345 7.60288 10.1105C7.41088 9.87848 7.34288 9.60648 7.39888 9.29448C7.44688 8.98248 7.59888 8.71448 7.85488 8.49048C8.11088 8.26648 8.40288 8.15448 8.73088 8.15448C9.05088 8.15448 9.30288 8.26648 9.48688 8.49048C9.67888 8.71448 9.74688 8.98248 9.69088 9.29448C9.64288 9.61448 9.49088 9.88648 9.23488 10.1105C8.97888 10.3345 8.68688 10.4465 8.35888 10.4465ZM8.19088 16.9385H6.19888L7.25488 10.9385H9.24688L8.19088 16.9385Z" fill="white"/>
-                                                <g style="mix-blend-mode:screen" opacity="0.8">
-                                                <circle cx="8.15088" cy="13.0533" r="7.5" fill="white"/>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="select">
-                                            <select name="type">
-                                                <option value="">Выберите...</option>
-                                                <option value="1">Тест</option>
-                                            </select>
-                                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.90439 0.303613L0.504395 1.70361L6.50439 7.70361L12.5044 1.70361L11.1044 0.303613L6.50439 4.90361L1.90439 0.303613Z" fill="#12A7D6"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="box-select">
-                                        <div class="box-select-title">
-                                            <p class="select-title">Расположение</p>
-                                        </div>
-                                        <div class="select">
-                                            <select name="type" class="orange">
-                                                <option value="1">Алания</option>
-                                                <option value="2">Тест</option>
-                                            </select>
-                                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.90439 0.303613L0.504395 1.70361L6.50439 7.70361L12.5044 1.70361L11.1044 0.303613L6.50439 4.90361L1.90439 0.303613Z" fill="#12A7D6"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="box-select">
-                                        <div class="box-select-title">
-                                            <p class="select-title">До моря, м</p>
-                                        </div>
-                                        <div class="box-range">
-                                            <div class="extra-controls">
-                                                <input type="text" class="js-input-from" value="0" />
-                                                <input type="text" class="js-input-to" value="0" />
+                                <form action="">
+                                    <div class="tab-wrap">
+                                        <div class="input-wrap-main">
+                                            <div class="input-container">
+                                                <div class="btn-filter-wrap">
+                                                    <a href="#" class="btn-fiter active">Продажа</a>
+                                                    <a href="#" class="btn-fiter">Аренда</a>
+                                                </div>
+                                                <div class="box-select select-first">
+                                                    <p class="select-title">Тип объекта</p>
+                                                    <div class="select-box">
+                                                        <p>Выберите...</p>
+                                                        <img src="img/icon/down.svg" class="arrow" alt="arrow">
+                                                    </div>
+                                                    <div class="select-item-wrap">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="checkbox_1">
+                                                            <label for="checkbox_1">Апартаменты</label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="checkbox_2">
+                                                            <label for="checkbox_2">Виллы</label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="checkbox_3">
+                                                            <label for="checkbox_3">Дуплексы</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box-select">
+                                                    <div class="box-select-title">
+                                                        <span class="prompt">
+                                                            Первая цифра - количество спален Вторая цифра - количество гостиных В 95% гостиная совмещена с кухней
+                                                        </span>
+                                                        <p class="select-title">Планировка</p>
+                                                        <svg width="16" class="call-prompt" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="8.15088" cy="13.0533" r="7.5" fill="#FE674C"/>
+                                                            <path d="M8.35888 10.4465C8.04688 10.4465 7.79488 10.3345 7.60288 10.1105C7.41088 9.87848 7.34288 9.60648 7.39888 9.29448C7.44688 8.98248 7.59888 8.71448 7.85488 8.49048C8.11088 8.26648 8.40288 8.15448 8.73088 8.15448C9.05088 8.15448 9.30288 8.26648 9.48688 8.49048C9.67888 8.71448 9.74688 8.98248 9.69088 9.29448C9.64288 9.61448 9.49088 9.88648 9.23488 10.1105C8.97888 10.3345 8.68688 10.4465 8.35888 10.4465ZM8.19088 16.9385H6.19888L7.25488 10.9385H9.24688L8.19088 16.9385Z" fill="white"/>
+                                                            <g style="mix-blend-mode:screen" opacity="0.8">
+                                                            <circle cx="8.15088" cy="13.0533" r="7.5" fill="white"/>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="select-box">
+                                                        <p>Выберите...</p>
+                                                        <img src="img/icon/down.svg" class="arrow" alt="arrow">
+                                                    </div>
+                                                    <div class="select-item-wrap">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="checkbox_4">
+                                                            <label for="checkbox_4">1+1</label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="checkbox_5">
+                                                            <label for="checkbox_5">2+1</label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="checkbox_6">
+                                                            <label for="checkbox_6">3+1</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box-select">
+                                                    <div class="box-select-title">
+                                                        <p class="select-title">Расположение</p>
+                                                    </div>
+                                                    <div class="select-box">
+                                                        <p>Выберите...</p>
+                                                        <img src="img/icon/down.svg" class="arrow" alt="arrow">
+                                                    </div>
+                                                    <div class="select-item-wrap">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="checkbox_7">
+                                                            <label for="checkbox_7">Алания</label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="checkbox_8">
+                                                            <label for="checkbox_8">Авсаллар</label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" id="checkbox_9">
+                                                            <label for="checkbox_9">Конаклы</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box-select">
+                                                    <div class="box-select-title">
+                                                        <p class="select-title">До моря, м</p>
+                                                    </div>
+                                                    <div class="box-range">
+                                                        <div class="extra-controls">
+                                                            <input type="text" class="js-input-from1" value="0" />
+                                                            <input type="text" class="js-input-to1" value="0" />
+                                                        </div>
+                                                        <div class="range-slider">
+                                                            <input type="text" class="js-range-slider1" value="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box-select">
+                                                    <div class="box-select-title">
+                                                        <p class="select-title">Id</p>
+                                                    </div>
+                                                    <input type="text" class="id-input" placeholder="XXXX">
+                                                </div>
+                                                <div class="box-select">
+                                                    <div class="box-select-title">
+                                                        <p class="select-title">Ценовой диапазон</p>
+                                                    </div>
+                                                    <div class="box-range">
+                                                        <div class="extra-controls">
+                                                            <input type="text" class="js-input-from2" value="0" />
+                                                            <input type="text" class="js-input-to2" value="0" />
+                                                        </div>
+                                                        <div class="range-slider">
+                                                            <input type="text" class="js-range-slider2" value="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="range-slider">
-                                                <input type="text" class="js-range-slider" value="" />
+                                            <div class="hide-input-click">
+                                                <div class="input-container-hide">
+                                                    <div class="box-select">
+                                                        <div class="box-select-title">
+                                                            <p class="select-title">Год строительства</p>
+                                                        </div>
+                                                        <div class="box-range">
+                                                            <div class="extra-controls">
+                                                                <input type="text" class="js-input-from3" value="0" />
+                                                                <input type="text" class="js-input-to3" value="0" />
+                                                            </div>
+                                                            <div class="range-slider">
+                                                                <input type="text" class="js-range-slider3" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-select">
+                                                        <div class="box-select-title">
+                                                            <p class="select-title">До аэропорта, м</p>
+                                                        </div>
+                                                        <div class="box-range">
+                                                            <div class="extra-controls">
+                                                                <input type="text" class="js-input-from4" value="0" />
+                                                                <input type="text" class="js-input-to4" value="0" />
+                                                            </div>
+                                                            <div class="range-slider">
+                                                                <input type="text" class="js-range-slider4" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-select">
+                                                        <div class="box-select-title">
+                                                            <p class="select-title">Площадь, <sup>м2</sup></p>
+                                                        </div>
+                                                        <div class="box-range">
+                                                            <div class="extra-controls">
+                                                                <input type="text" class="js-input-from5" value="0" />
+                                                                <input type="text" class="js-input-to5" value="0" />
+                                                            </div>
+                                                            <div class="range-slider">
+                                                                <input type="text" class="js-range-slider5" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-select">
+                                                        <div class="box-select-title">
+                                                            <p class="select-title">Этаж</p>
+                                                        </div>
+                                                        <div class="box-range">
+                                                            <div class="extra-controls">
+                                                                <input type="text" class="js-input-from6" value="0" />
+                                                                <input type="text" class="js-input-to6" value="0" />
+                                                            </div>
+                                                            <div class="range-slider">
+                                                                <input type="text" class="js-range-slider6" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-select">
+                                                        <div class="box-select-title">
+                                                            <p class="select-title">Вид из окна</p>
+                                                        </div>
+                                                        <div class="select-box">
+                                                            <p>Выберите...</p>
+                                                            <img src="img/icon/down.svg" class="arrow" alt="arrow">
+                                                        </div>
+                                                        <div class="select-item-wrap">
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="checkbox_7">
+                                                                <label for="checkbox_7">Алания</label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="checkbox_8">
+                                                                <label for="checkbox_8">Авсаллар</label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="checkbox_9">
+                                                                <label for="checkbox_9">Конаклы</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-select">
+                                                        <div class="box-select-title">
+                                                            <p class="select-title">Особенности</p>
+                                                        </div>
+                                                        <div class="select-box">
+                                                            <p>Выберите...</p>
+                                                            <img src="img/icon/down.svg" class="arrow" alt="arrow">
+                                                        </div>
+                                                        <div class="select-item-wrap">
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="checkbox_7">
+                                                                <label for="checkbox_7">Алания</label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="checkbox_8">
+                                                                <label for="checkbox_8">Авсаллар</label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="checkbox_9">
+                                                                <label for="checkbox_9">Конаклы</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-select">
+                                                        <div class="box-select-title">
+                                                            <p class="select-title">Инфраструктура</p>
+                                                        </div>
+                                                        <div class="select-box">
+                                                            <p>Выберите...</p>
+                                                            <img src="img/icon/down.svg" class="arrow" alt="arrow">
+                                                        </div>
+                                                        <div class="select-item-wrap">
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="checkbox_7">
+                                                                <label for="checkbox_7">Алания</label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="checkbox_8">
+                                                                <label for="checkbox_8">Авсаллар</label>
+                                                            </div>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="checkbox_9">
+                                                                <label for="checkbox_9">Конаклы</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="filter-btn-wrap">
+                                            <button type="submit" class="btn-blue">Поиск в каталоге</button>
+                                            <div class="sub-button-hide">
+                                                <div class="result-btn">
+                                                    <p class="result-title">Найдено объектов:</p>
+                                                    <p class="result-area">364</p>
+                                                </div>
+                                                <div class="checkbox-wrap-btn">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="checkbox_22">
+                                                        <label for="checkbox_22">По Времени</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="checkbox_23">
+                                                        <label for="checkbox_23">По Цене</label>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox-wrap-btn">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="checkbox_24">
+                                                        <label for="checkbox_24">Плиткой</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="checkbox_25">
+                                                        <label for="checkbox_25">Списком</label>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="box-select">
-                                        <div class="box-select-title">
-                                            <p class="select-title">Id</p>
-                                        </div>
-                                        <input type="text" class="id-input" placeholder="XXXX">
+                                    <div class="tab-wrap-btn">
+                                        <a href="#" class="link-simple call-filter down-icon">
+                                            Развернуть фильтр
+                                        </a>
+                                        <a href="#" class="link-simple close-icon">
+                                            Сбросить фильтр
+                                        </a>
                                     </div>
-                                    <div class="box-select">
-                                        <div class="box-select-title">
-                                            <p class="select-title">Ценовой диапазон</p>
-                                        </div>
-                                        <div class="box-range">
-                                            <div class="extra-controls">
-                                                <input type="text" class="js-input-from-2" value="0" />
-                                                <input type="text" class="js-input-to-2" value="0" />
-                                            </div>
-                                            <div class="range-slider">
-                                                <input type="text" class="js-range-slider-2" value="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn-blue">Поиск в каталоге</button>
                                 </form>
-                                <div class="tab-wrap-btn">
-                                    <a href="#" class="link-simple down-icon">
-                                        Развернуть фильтр
-                                    </a>
-                                    <a href="#" class="link-simple close-icon">
-                                        Сбросить фильтр
-                                    </a>
-                                </div>
                             </div>
                             
                             <div class="tabs__content">

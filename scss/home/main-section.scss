@@ -1,12 +1,15 @@
 .main-section-container {
-    background: url(../img/home/main-section/main-bg.png) no-repeat center center;
     background-size: cover;
     border-radius: 30px;
     height: 600px;
     position: relative;
+}
+
+.main-section {
     .slick-dots {
         display: flex;
         left: 15px;
+        bottom: 130px;
     }
     .slick-dots li button:before {
         color: #fff;
