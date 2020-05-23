@@ -1,3 +1,5 @@
+
+
 .help-block-container {
     background: url(../img/home/help/help-bg.png) no-repeat center center;
     background-size: cover;
@@ -7,6 +9,19 @@
     justify-content: center;
     padding: 20px;
     position: relative;
+    @media (max-width: 576px) {
+        background: url(../img/home/help/help-mob.png) no-repeat center center;
+        background-size: cover;
+    }
+    .palm-1 {
+        display: none;
+        @media (max-width: 576px) {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: -10px;
+        }
+    }
     &::before {
         content: '';
         display: block;
@@ -19,6 +34,10 @@
         border-radius: 30px;
         opacity: 0;
         transition: .3s;
+        @media (max-width: 576px) {
+            mix-blend-mode: screen;
+            opacity: 1;
+        }
     }
     &:hover {
         &::before {
@@ -35,8 +54,9 @@
         background-position: left;
     }
     @media (max-width: 990px) {
-        height: 200px;
-        align-items: center;
+        height: 450px;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     .helper {
         position: absolute;
@@ -52,6 +72,18 @@
             left: -20px;
             height: 250px;
         }
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .helper-mob {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+            position: absolute;
+            left: 10px;
+            bottom: 0;
+        }
     }
     .help-bloc-text {
         display: flex;
@@ -62,6 +94,10 @@
         @media (max-width: 1400px) {
             right: -100px;
         }
+        @media (max-width: 990px) {
+            right: 0;
+            width: 100%;
+        }
     }
     .help-title {
         text-shadow: -17px 3px 43px #FFFFFF;
@@ -69,8 +105,16 @@
         font: 3rem "gilroy-bold";
         margin-bottom: 20px;
         @media (max-width: 990px) {
-            font-size: 1.75rem;
-            text-align: center;
+            font-size: 1.875rem;
+            text-align: left;
+            color: #fe5148;
+            line-height: 25px;
+        }
+        br {
+            display: none;
+            @media (max-width: 990px) {
+                display: block;
+            }
         }
     }
     .help-text {
@@ -79,6 +123,11 @@
         font: 1.5rem/26px "gilroy-light";
         opacity: 0;
         transition: .3s;
+        @media (max-width: 990px) {
+            font: 1rem/18px "gilroy-light";
+            opacity: 1;
+            margin-bottom: 20px;
+        }
     }
     .help-btn {
         display: inline-block;
@@ -92,6 +141,16 @@
         text-align: center;
         opacity: 0;
         transition: .3s;
+        @media (max-width: 990px) {
+            opacity: 1;
+            width: 250px;
+            box-sizing: border-box;
+            padding: 20px;
+            font-size: 1.25rem;
+        }
+        @media (max-width: 450px) {
+            width: 100%;
+        }
         &:hover {
             box-shadow: none;
         }

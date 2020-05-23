@@ -1,0 +1,41 @@
+.bredcrumbs {
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+
+.bredcrumbs-wrap {
+    display: flex;
+    align-items: center;
+    @media (max-width: 576px) {
+        flex-wrap: wrap;
+    }
+    a {
+        margin-right: 10px;
+        padding-right: 5px;
+        position: relative;
+        color: #12B3D6;
+        font: .87rem "gilroy-medium";
+        img {
+            position: relative;
+            top: 2px;
+        }
+        &::after {
+            content: url(../img/favorite/arrow-right.svg);
+            position: absolute;
+            right: -6.5px;
+            top: 3px;
+        }
+    }
+    a:first-child {
+        &::after {
+            top: 9px;
+            right: -5px;
+        }
+    }
+    span {
+        color: #000;
+        font: .87rem "gilroy-medium";
+        position: relative;
+        top: 1px;
+    }
+}

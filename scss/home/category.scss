@@ -1,3 +1,5 @@
+
+
 .category-container {
     background: #fff;
     padding: 35px 25px;
@@ -5,17 +7,32 @@
     border-radius: 30px;
     overflow: hidden;
     position: relative;
-    &::before {
-        content: url(../img/home/category/palm-1.svg);
+    @media (max-width: 576px) {
+        padding: 15px 15px 60px 15px;
+        border-radius: 20px;
+    }
+    .palm-1 {
         position: absolute;
         top: -15px;
         left: 30%;
+        @media (max-width: 990px) {
+            height: 120px;
+            transform: rotate(240deg);
+            bottom: -40px;
+            left: -120px;
+            top: auto;
+        }
     }
-    &::after {
-        content: url(../img/home/category/palm-2.svg);
+    .palm-2{
         position: absolute;
         top: -30px;
         right: 120px;
+        @media (max-width: 990px) {
+            height: 100px;
+        }
+        @media (max-width: 576px) {
+            right: -60px;
+        }
     }
     .slick-prev:before {
         content: url(../img/icon/left.svg);
@@ -40,6 +57,18 @@
         height: 30px;
         width: 30px;
         border-radius: 50%;
+        @media (max-width: 576px) {
+            top: auto;
+            right: auto;
+            bottom:-55px;
+            left: 39%;
+        }
+        @media (max-width: 380px) {
+            left: 37%;
+        }
+        @media (max-width: 360px) {
+            left: 33%;
+        }
     }
     .slick-next {
         z-index: 2;
@@ -54,10 +83,33 @@
         height: 30px;
         width: 30px;
         border-radius: 50%;
+        @media (max-width: 576px) {
+            top: auto;
+            right: auto;
+            bottom:-55px;
+            left: 51%;
+        }
+        @media (max-width: 380px) {
+            left: 50%;
+        }
+        @media (max-width: 360px) {
+            left: 52%;
+        }
     }
     .slick-list {
         padding: 0 40px 0 0!important;
         position: relative;
+        @media (max-width: 576px) {
+            padding: 0 75px 0 0!important;
+        }
+    }
+    .title-sm {
+        br {
+            display: none;
+            @media (max-width: 576px) {
+                display: block;
+            }
+        }
     }
 }
 
@@ -66,6 +118,10 @@
     position: relative;
     width: 100.75%;
     left: -0.75%;
+    @media (max-width: 576px) {
+        width: 107%;
+        left: -2.5%;
+    }
 }
 
 
@@ -79,6 +135,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media (max-width: 576px) {
+        height: 350px;
+        margin: 0 5px;
+    }
     .category-bg {
         position: absolute;
         height: 100%;
@@ -105,5 +165,8 @@
         bottom: 30px;
         left: 15px;
         font: 1.5rem 'gilroy-bold';
+        @media (max-width: 576px) {
+            bottom: 20px;
+        }
     }
 }

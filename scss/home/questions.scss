@@ -1,3 +1,5 @@
+
+
 .questions-container {
     display: flex;
     justify-content: space-between;
@@ -25,17 +27,21 @@
         box-sizing: border-box;
         padding: 20px;
     }
-    &::before {
-        content: url(../img/home/quest/palm-1.svg);
+    .palm-1{
         position: absolute;
         right: 20%;
         top: -30px;
+        @media (max-width: 990px) {
+            height: 60px;
+        }
     }
-    &::after {
-        content: url(../img/home/quest/palm-2.svg);
+    .palm-2 {
         position: absolute;
         left: 0;
         bottom: 0;
+        @media (max-width: 990px) {
+            height: 40px;
+        }
     }
     .acc-box {
         transition: .3s;
@@ -61,14 +67,25 @@
         @media (max-width: 990px) {
             font-size: .9rem;
         }
-        img {
+        @media (max-width: 990px) {
+            padding: 15px 10px;
+        }
+        svg {
             right: 20px;
             top: 35%;
             position: absolute;
             transition: .3s;
         }
     }
-     
+    
+    .acc-head-active {
+        font-family: "gilroy-bold";
+        border-radius: 10px 10px 0 0;
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
     .acc-body {
         color: #4F4F4F;
         font: 1rem "gilroy-medium";
@@ -80,6 +97,7 @@
         border-radius: 0 0 10px 10px;
         @media (max-width: 990px) {
             font-size: .9rem;
+            padding: 10px;
         }
     }
 }
@@ -87,14 +105,8 @@
 .active-body {
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
     border-radius: 10px;
-    .acc-head {
-        font-family: "gilroy-bold";
-        border-radius: 10px 10px 0 0;
-        img {
-            transform: rotate(180deg);
-        }
-    }
 }
+
 
 .questions-guarantees {
     display: flex;
@@ -107,17 +119,34 @@
     padding: 30px;
     position: relative;
     overflow: hidden;
-    &::before {
-        content: url(../img/home/quest/palm-3.svg);
+    .palm-3 {
         position: absolute;
         left: 0;
         bottom: 20%;
+        @media (max-width: 990px) {
+            height: 100px;
+            transform: rotate(-20deg);
+            left: -30px;
+            bottom: 100px;
+        }
     }
-    &::after {
-        content: url(../img/home/quest/palm-4.svg);
+    .palm-4 {
         position: absolute;
         right: -20px;
         bottom: -20px;
+        @media (max-width: 990px) {
+            height: 80px;
+            right: -40px;
+            bottom: 0;
+        }
+    }
+    .palm-5 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media (max-width: 990px) {
+            height: 60px;
+        }
     }
     @media (max-width: 990px) {
         width: 100%;
@@ -132,12 +161,6 @@
         z-index: 2;
         display: block;
         width: 100%;
-        &::after {
-            content: url(../img/home/quest/palm-5.svg);
-            position: absolute;
-            right: -30px;
-            top: -30px;
-        }
     }
     .guarantees-box {
         padding: 20px 45px;
@@ -171,10 +194,7 @@
             position: relative;
             z-index: 2;
             @media (max-width: 1280px) {
-                font-size: .95rem;
-            }
-            @media (max-width: 576px) {
-                font-size: .9rem;
+                font-size: 1rem;
             }
             span {
                 color: #ff871b;
@@ -194,7 +214,8 @@
             color: #fff;
             font: 12rem 'gilroy-bold';
             @media (max-width: 990px) {
-                left: 10px;
+                left: 0;
+                font-size: 14rem;
             }
         }
     }
@@ -226,7 +247,8 @@
             color: #fff;
             font: 12rem 'gilroy-bold';
             @media (max-width: 990px) {
-                left: 10px;
+                left: 0;
+                font-size: 14rem;
             }
         }
     }
@@ -252,7 +274,8 @@
             color: #fff;
             font: 12rem 'gilroy-bold';
             @media (max-width: 990px) {
-                left: 10px;
+                left: 0;
+                font-size: 14rem;
             }
         }
     }
@@ -280,7 +303,8 @@
             color: #fff;
             font: 12rem 'gilroy-bold';
             @media (max-width: 990px) {
-                left: 10px;
+                left: 0;
+                font-size: 14rem;
             }
         }
     }

@@ -1,8 +1,14 @@
+
+
 .main-section-container {
     background-size: cover;
     border-radius: 30px;
     height: 600px;
     position: relative;
+    @media (max-width: 768px) {
+        height: 320px;
+        border-radius: 20px;
+    }
 }
 
 .main-section {
@@ -10,14 +16,24 @@
         display: flex;
         left: 15px;
         bottom: 130px;
+        @media (max-width: 768px) {
+            bottom: 35px;
+            left: 5px;
+        }
     }
     .slick-dots li button:before {
         color: #fff;
         font-size:40px;
         opacity: 1;
+        @media (max-width: 768px) {
+            font-size: 50px;
+        }
     }
     .slick-dots li {
         margin: 0;
+        @media (max-width: 768px) {
+            margin-right: 5px;
+        }
     }
     .slick-dots li.slick-active button:before {
         color: #fe6934;
@@ -31,6 +47,10 @@
     max-width: 450px;
     top: 35%;
     position: relative;
+    @media (max-width: 768px) {
+        max-width: 100%;
+        top: 60px;
+    }
 }
 
 .main-secrtion-slider-box {
@@ -39,14 +59,26 @@
     backdrop-filter: blur(9px);
     border-radius: 10px;
     margin-right: 10px;
+    @media (max-width: 768px) {
+        margin: 0;
+        border-radius: 0;
+        padding: 5px 10px;
+    }
     .slider-title {
         color: #fe6934;
         text-shadow: 0px 4px 4px rgba(21, 21, 21, 0.25);
         font: 3.2rem 'gilroy-exbold';
+        @media (max-width: 576px) {
+            font-size: 2.6rem;
+            margin-bottom: 5px;
+        }
     }
     .slider-text {
         color: #fff;
         font: 1.2rem/28px 'gilroy-medium';
+        @media (max-width: 576px) {
+            font: 1.1rem/25px 'gilroy-medium';
+        }
     }
 }
 
@@ -57,6 +89,9 @@
     position: absolute;
     right: 5px;
     bottom: 0;
+    @media (max-width: 990px) {
+        display: none;
+    }
     .main-link-info {
         display: flex;
         align-items: flex-end;
@@ -80,7 +115,7 @@
             font: 2rem 'gilroy-exbold';
             margin-bottom: 10px;
         }
-        img {
+        svg {
             position: relative;
             left: 100px;
         }
