@@ -1,4 +1,4 @@
-
+/*Футер начало*/
 
 footer {
     background: #fff;
@@ -187,6 +187,9 @@ footer {
                 color: #2591F4;
                 font: 1.125rem "gilroy-medium";
                 transition: .3s;
+                &:hover {
+                    opacity: .8;
+                }
                 @media (max-width: 1400px) {
                     font-size: 1rem;
                 }
@@ -465,3 +468,6 @@ footer {
         height: auto;
     }
 }
+
+
+/*Футер конец*/

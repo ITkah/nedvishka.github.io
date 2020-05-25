@@ -1,0 +1,236 @@
+
+
+.why-container {
+    background: #fefdfc;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    @media (max-width: 990px) {
+        border-radius: 20px;
+    }
+    .scroll {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+            position: absolute;
+            top: 500px;
+            z-index: 9;
+            left: 44%;
+        }
+    }
+    .palm-1 {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+            position: absolute;
+            height: 100px;
+            z-index: 8;
+            top: 500px;
+            right: -40px;
+        }
+    }
+    .palm-2 {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+            position: absolute;
+            height: 100px;
+            z-index: 8;
+            bottom: 700px;
+            right: -40px;
+        }
+    }
+    .palm-3 {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+            position: absolute;
+            height: 100px;
+            z-index: 8;
+            bottom: 150px;
+            left: -40px;
+            transform: rotate(90deg);
+        }
+    }
+    .palm-4 {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+            position: absolute;
+            height: 100px;
+            z-index: 8;
+            bottom: 1000px;
+            left: -40px;
+            transform: rotate(90deg);
+        }
+    }
+    .title-sm {
+        position: relative;
+        z-index: 3;
+        padding: 35px 30px;
+        @media (max-width: 990px) {
+            padding: 15px;
+        }
+    }
+    .cload-top {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        @media (max-width: 990px) {
+            top: -20px;
+        }
+    }
+    .panorama-scroll {
+        @media (max-width: 990px) {
+            top: -20px;
+            width: 1000px;
+            height: 450px;
+            position: relative;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    }
+    .panorama {
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+        height: auto;
+        top: -50px;
+        @media (max-width: 990px) {
+            height: 450px;
+            object-fit: cover;
+            transform: translateX(0);
+            animation: scroll-anim 15s linear infinite;
+        }
+    }
+    @keyframes scroll-anim {
+        0% {transform: translateX(0);}
+        5%{transform: translateX(-40px);}
+        10%{transform: translateX(-80px);}
+        15%{transform: translateX(-120px);}
+        20%{transform: translateX(-170px);}
+        25%{transform: translateX(-210px);}
+        30%{transform: translateX(-250px);}
+        35%{transform: translateX(-290px);}
+        40%{transform: translateX(-330px);}
+        45%{transform: translateX(-370px);}
+        50%{transform: translateX(-410px);}
+        55%{transform: translateX(-370px);}
+        60%{transform: translateX(-330px);}
+        65%{transform: translateX(-290px);}
+        70%{transform: translateX(-250px);}
+        75%{transform: translateX(-210px);}
+        80%{transform: translateX(-170px);}
+        85%{transform: translateX(-120px);}
+        90%{transform: translateX(-80px);}
+        95%{transform: translateX(-40px);}
+        100%{transform: translateX(0);}
+    }
+    .cload-bottom {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        @media (max-width: 990px) {
+            top: 340px;
+            bottom: auto;
+        }
+    }
+    .why-box {
+        background: url(../img/home/why/letter.png) no-repeat center center;
+        background-size: contain;
+        height: 160px;
+        position: relative;
+        z-index: 3;
+        margin: 0 20px 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 990px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            height: auto;
+            margin: 20px;
+            background: transparent;
+        }
+        .why-box-img:nth-child(2n+1){
+            position: relative;
+            top: -60px;
+            @media (max-width: 990px) {
+                top: 0;
+            }
+        }
+        .why-box-img:nth-child(2n+2){
+            position: relative;
+            top: -60px;
+            @media (max-width: 990px) {
+                top: 0;
+                flex-direction: column-reverse;
+            }
+        }
+        .why-text {
+            color: #000;
+            font: 1.1rem/27px "gilroy-medium";
+            text-align: center;
+            margin: 10px 0;
+            opacity: 0;
+            transition: .3s;
+            @media (max-width: 1600px) {
+                font-size: .87rem;
+                line-height: 22px;
+            }
+            @media (max-width: 990px) {
+                opacity: 1;
+                font-size: 1.125rem;
+                line-height: 32px;
+            }
+            span {
+                color: #12cad6;
+            }
+        }
+        .why-box-img {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+                .why-text {
+                    opacity: 1;
+                }
+            }
+            svg {
+                @media (max-width: 1300px) {
+                    height: 100px;
+                }
+                @media (max-width: 1200px) {
+                    height: 80px;
+                    margin: 0 auto;
+                    display: block;
+                }
+                @media (max-width: 990px) {
+                    height: 120px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .why-box-img:first-child{
+            left: 0;
+            position: relative;
+            @media (max-width: 1200px) {
+                left: 0;
+            }
+        }
+        .why-box-img:last-child{
+            right: 0;
+            position: relative;
+            @media (max-width: 1200px) {
+                right: 0;
+            }
+        }
+    }
+}

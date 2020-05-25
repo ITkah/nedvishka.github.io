@@ -1,3 +1,4 @@
+/* Главная купить у нас */
 
 .buy-us-container {
     background: #fff;
@@ -20,6 +21,7 @@
         opacity: 1;
     }
     .slick-prev {
+        opacity: 0;
         z-index: 2;
         right: 70px;
         left: auto;
@@ -34,6 +36,7 @@
         border-radius: 50%;
         @media (max-width: 1600px) {
             display: flex;
+            opacity: 1;
         }
         @media (max-width: 576px) {
             top: auto;
@@ -50,6 +53,7 @@
     }
     .slick-next {
         z-index: 2;
+        opacity: 0;
         right: 30px;
         left: auto;
         top: -40px;
@@ -63,6 +67,7 @@
         border-radius: 50%;
         @media (max-width: 1600px) {
             display: flex;
+            opacity: 1;
         }
         @media (max-width: 576px) {
             top: auto;
@@ -481,3 +486,5 @@
         margin: 0 10px;
     }
 }
+
+/* Главная купить конец */

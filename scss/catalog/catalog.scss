@@ -1,26 +1,18 @@
+/* Каталог начало */
+
 .seo-text-container {
-    background: #fff;
     padding: 35px 25px;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
-    &::before {
-        content: url(../img/catalog/letter.svg);
-        position: absolute;
-        left: 0;
-        width: 100%;
-        top: 50px;
-        @media (max-width: 990px) {
-            top: 90px;
-            left: -20px;
-        }
-        @media (max-width: 576px) {
-            content: url(../img/catalog/letter-mob.svg);
-            right: 25px;
-            left:  auto;
-            width: auto;
-            height: 100%;
-        }
+    background: url(../img/catalog/letter.svg) no-repeat center center;
+    background-size: contain;
+    z-index: 9;
+    background-color: #fff;
+    @media (max-width: 990px) {
+        background: url(../img/catalog/letter-mob.svg) no-repeat center right 20px;
+        background-size: contain;
+        background-color: #fff;
     }
     @media (max-width: 576px) {
         padding: 15px;
@@ -60,24 +52,79 @@
     z-index: 9;
     left: -10px;
     margin-bottom: 50px;
-    li {
-        height: 510px;
-    }
     @media (max-width: 1600px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    @media (max-width: 1100px) {
-        grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width:1260px) {
+        grid-template-columns:  1fr 1fr 1fr;
     }
     @media (max-width: 990px) {
-        grid-template-columns: 1fr 1fr;
-    }
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+        margin-top: 35px;
+        width: 110%;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: scroll;
     }
     @media (max-width: 576px) {
-        display: none;
+        margin-top: 45px;
     }
+    li {
+        height: 510px;
+        position: relative;
+
+        @media (max-width: 990px) {
+            height: 100%;
+            width: 100%;
+            margin-right: 15px;
+            
+        }
+
+        .sentence-box-slide {
+            @media (max-width: 990px) {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        &:hover {
+            .close-icon {
+                opacity: 1;
+            }
+        }
+
+        .close-icon {
+            position: absolute;
+            right: -10px;
+            opacity: 0;
+            top: 0;
+            @media (max-width: 990px) {
+                opacity: 1;
+            }
+        }
+    }
+
+    .sentence-box-slide {
+        @media (max-width: 990px) {
+            margin-right: 10px;
+            width: 100%;
+        }
+    }
+    .sentence-box {
+        margin: 5px 10px;
+        @media (max-width: 990px) {
+            margin-right: 10px;
+            width: 100%;
+        }
+    }
+    .sentence-box {
+        z-index: 9;
+    }
+
 }
 
 .catalog-container {
@@ -143,6 +190,15 @@
             bottom: 20%;
         }
     }
+    .palm-7 {
+        position: absolute;
+        right: -10px;
+        bottom: -10px;
+        @media (max-width: 990px) {
+            height: 200px;
+            bottom: 20%;
+        }
+    }
     .catalog-list-btn {
         cursor: pointer;
         border: 1px solid #828282;
@@ -158,7 +214,7 @@
         &:hover {
             box-shadow: 4px 4px 15px rgba(0, 0, 0, .15);
         }
-        @media (max-width: 576px) {
+        @media (max-width: 990px) {
             display: none;
         }
         p {
@@ -291,7 +347,7 @@
         margin-bottom: 0;
     }
 
-    .checkbox input[type="checkbox"] {
+    .checkbox input[type="radio"] {
         opacity: 0;
         position: absolute;
     }
@@ -330,19 +386,20 @@
         top: 2px;
     }
 
-    .checkbox .active-check::before {
-        background: #ff712c;
-        border: 1px solid #ff712c;
-    }
 
-    .checkbox input[type="checkbox"]+label::after {
+    .checkbox input[type="radio"]+label::after {
         content: none;
     }
 
-    .checkbox input[type="checkbox"]:checked+label::after {
+    .checkbox input[type="radio"]:checked+label::after {
         content: "";
     }
 
+    .checkbox input[type="radio"]:checked+label::before {
+        content: "";
+        background: #fe6745;
+        border: 1px solid #fe6745;
+    }
 }
 
 .catalog-bottom-panel {
@@ -394,6 +451,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+        z-index: 9;
         @media (max-width: 1000px) {
             display: none;
         }
@@ -419,17 +478,7 @@
     }
 }
 
-.catalog {
-    .mob-slider {
-        display: none;
-        @media (max-width: 576px) {
-            right: 10px;
-            display: block;
-            width: 110%;
-            margin-bottom: 20px;
-        }
-    }
-}
+
 
 .hide-sentence-plikta {
     display: none;
@@ -519,3 +568,5 @@
 }
 
 
+
+/*Каталог конец*/

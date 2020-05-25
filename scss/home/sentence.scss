@@ -1,3 +1,5 @@
+/* Главная карточки начало */
+
 .sentence-container {
     background: #fff;
     padding: 35px 25px;
@@ -320,7 +322,6 @@
         .hide-pryce {
             position: relative;
             opacity: 1;
-            transform: translateX(0);
         }
 
         .sentence-info-box-link {
@@ -485,7 +486,6 @@
         position: absolute;
         padding-right: 15px;
         opacity:0;
-        transform: translateX(100%);
         transition: .5s;
 
         @media (max-width: 768px) {
@@ -610,11 +610,13 @@
             filter: grayscale(100%);
             height: 25px;
             opacity: .3;
+        }
+    }
 
-            @media (max-width: 990px) {
-                filter: grayscale(0);
-                opacity: 1;
-            }
+    .active-link {
+        img {
+            opacity: 1;
+            filter: grayscale(0);
         }
     }
 
@@ -780,6 +782,13 @@
     }
 }
 
+.mob-pagi {
+    display: none;
+    @media (max-width: 990px) {
+        display: block;
+    }
+}
+
 .top-width {
     width: 110px;
     text-align: center;
@@ -792,8 +801,13 @@
     position: relative;
     left: -10px;
 
-    @media (max-width: 990px) {
-        display: none;
+    @media (max-width: 576px) {
+        width: 110%;
+    }
+    .simple-block {
+        @media (max-width: 990px) {
+            display: none;
+        }
     }
 }
 
@@ -816,12 +830,35 @@
     }
 
     @media (max-width: 990px) {
-        display: none;
+        margin-top: 15px;
+        width: 100%;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: scroll;
     }
+    
 
     li {
         height: 510px;
         position: relative;
+
+        @media (max-width: 990px) {
+            height: 100%;
+            width: 100%;
+            margin-right: 15px;
+            
+        }
+
+        .sentence-box-slide {
+            @media (max-width: 990px) {
+                padding-top: 30px;
+                padding-bottom: 0;
+            }
+        }
 
         &:hover {
             .close-icon {
@@ -834,96 +871,57 @@
             right: -10px;
             opacity: 0;
             top: 0;
-        }
-    }
-
-    .sentence-box {
-        z-index: 9;
-    }
-
-}
-
-
-.mob-slider {
-    opacity: 0;
-    position: absolute;
-    z-index: -99;
-
-    @media (max-width: 990px) {
-        opacity: 1;
-        position: relative;
-        z-index: 9;
-        margin-top: 20px;
-    }
-
-    .finger {
-        display: none;
-        @media (max-width: 576px) {
-            display: block;
-            position: absolute;
-            left: 10px;
-            bottom: 5px;
-            animation: finger 3s linear infinite;
-        }
-        svg {
-            @media (max-width: 576px) {
-                height: 30px;
-                width: 30px;
+            @media (max-width: 990px) {
+                opacity: 1;
             }
         }
     }
 
-    @keyframes finger {
-        0% {transform: translateX(0);}
-        25%{transform: translateX(35px);}
-        50%{transform: translateX(65px);}  
-        75%{transform: translateX(35px);} 
-        100%{transform: translateX(0);} 
-    }
-
-    .sentence-wrap-slider-2 {
-        position: relative;
-        @media (max-width: 576px) {
-            margin-bottom: 15px;
-            padding-bottom: 30px;
-        }
-        li {
-            @media (max-width: 576px) {
-                width: 100%;
-                margin-right: 15px;
-            }
-        }
-    }
-    
     .sentence-box-slide {
-        @media (max-width: 576px) {
+        @media (max-width: 990px) {
             margin-right: 10px;
             width: 100%;
         }
     }
     .sentence-box {
         margin: 5px 10px;
-        @media (max-width: 576px) {
+        @media (max-width: 990px) {
             margin-right: 10px;
             width: 100%;
         }
     }
+    .sentence-box {
+        z-index: 9;
+    }
 
-    li {
-        position: relative;
+}
 
-        .close-icon {
-            position: absolute;
-            opacity: 1;
-            top: 0;
-            right: 0px;
-        }
 
-        .sentence-box-slide {
-            padding-top: 30px;
+.finger {
+    display: none;
+    @media (max-width: 990px) {
+        display: block;
+        position: absolute;
+        left: 10px;
+        bottom: 5px;
+        animation: finger 3s linear infinite;
+    }
+    svg {
+        @media (max-width: 990px) {
+            height: 30px;
+            width: 30px;
         }
     }
 }
+
+@keyframes finger {
+    0% {transform: translateX(0);}
+    25%{transform: translateX(35px);}
+    50%{transform: translateX(65px);}  
+    75%{transform: translateX(35px);} 
+    100%{transform: translateX(0);} 
+}
+
 
 .mob-form {
     display: none;
@@ -1169,14 +1167,7 @@
     }
 }
 
-.simple-block {
-   
-}
 
-.fixed-simple-form {
-    position: relative;
-    top: 30px;
-}
 
 .sentence-wrap-slider-2 {
     display: grid;
@@ -1200,6 +1191,25 @@
     margin-bottom: 10px;
     li {
         margin: 0 5px;
+        @media (max-width: 1024px) {
+            margin: 0 2px;
+        }
+        button {
+            height: 30px;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .num {
+        transition: .3s;
+        position: relative;
+        &:hover {
+            background: #fff;
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
+            border-radius: 50%;
+        }
     }
     .active {
         background: #FFFFFF;
@@ -1210,6 +1220,7 @@
         align-items: center;
         justify-content: center;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
+        transition: .3s;
     }
     .prev {
         height: 30px;
@@ -1221,15 +1232,18 @@
         background: #FFFFFF;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
         position: relative;
-        margin-right: 10px;
+        margin-right: 5px;
         transition: .3s;
+        &:hover {
+            box-shadow: none;
+        }
         svg {
             position: relative;
             right: 1px;
         }
     }
     .next {
-        margin-left:10px;
+        margin-left:5px;
         height: 30px;
         width: 30px;
         display: flex;
@@ -1240,6 +1254,9 @@
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
         position: relative;
         transition: .3s;
+        &:hover {
+            box-shadow: none;
+        }
         svg {
             position: relative;
             left: 0;
@@ -1260,5 +1277,30 @@
     .simple-form-favorite {
         max-width: 400px;
         margin: 0 auto;
+        right: auto;
     }
 }
+
+.simple-block {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    padding-right: 10px;
+    padding-top: 25px;
+    @media (max-width: 1400px) {
+        width: 350px;
+    }
+}
+
+.fixed-simple-form {
+    transition: .3s;
+    right: auto;
+}
+
+.fixed {
+    position: fixed;
+    top: 100px;
+}
+
+
+/* Главная карточки конец */

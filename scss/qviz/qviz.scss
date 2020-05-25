@@ -1,3 +1,5 @@
+/*Квиз начало*/
+
 .qviz-wrap {
     background: #fff;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
@@ -224,6 +226,11 @@
         }
     }
 
+    input {
+        opacity: 1;
+        left: -50px;
+    }
+
 }
 
 .warning {
@@ -238,7 +245,7 @@
     font: 1rem/24px "gilroy-medium";
     right: 0;
     top: 0;
-    display: none;
+    display: block;
     @media (max-width: 576px) {
         width: auto;
         padding: 5px;
@@ -498,3 +505,5 @@
         }
     }
 }
+
+/*Квиз Конец*/
