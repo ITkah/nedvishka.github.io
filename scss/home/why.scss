@@ -74,12 +74,16 @@
     }
     .cload-top {
         position: absolute;
-        top: 15px;
+        top: 25px;
         left: 0;
         right: 0;
+        width: 100%;
         z-index: 2;
+        @media (max-width: 1400px) {
+            top: 60px;
+        }
         @media (max-width: 990px) {
-            top: -20px;
+            top: 60px;
         }
     }
     .panorama-scroll {
@@ -98,6 +102,9 @@
         max-width: 100%;
         height: auto;
         top: -50px;
+        height: 500px;
+        object-fit: cover;
+        width: 100%;
         @media (max-width: 990px) {
             height: 450px;
             object-fit: cover;
@@ -116,7 +123,7 @@
         35%{transform: translateX(-290px);}
         40%{transform: translateX(-330px);}
         45%{transform: translateX(-370px);}
-        50%{transform: translateX(-410px);}
+        50%{transform: translateX(-375px);}
         55%{transform: translateX(-370px);}
         60%{transform: translateX(-330px);}
         65%{transform: translateX(-290px);}
@@ -130,13 +137,18 @@
     }
     .cload-bottom {
         position: absolute;
-        bottom: 60px;
+        bottom: 50px;
         left: 0;
         right: 0;
+        width: 100%;
         z-index: 2;
+        @media (max-width: 1400px) {
+            bottom: 120px;
+        }
         @media (max-width: 990px) {
-            top: 340px;
+            top: 440px;
             bottom: auto;
+            height: 60px;
         }
     }
     .why-box {

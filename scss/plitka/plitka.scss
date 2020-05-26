@@ -1,7 +1,7 @@
 /*Плитка начало*/
 .hide-sentence-plikta {
-	padding-top: 30px;
-	padding-right: 35px;
+	padding-top: 10px;
+	padding-right: 30px;
 	@media (max-width: 990px) {
         display: none;
     }
@@ -35,7 +35,7 @@
 	}
 	.sentence-info-box {
 		flex: 0 0 20%;
-		margin: 0 0 20px 0;
+		margin: 0 0 15px 0;
 		.sentence-text {
 			font: 1.125rem 'gilroy-medium';
 			margin-top: 10px;
@@ -43,9 +43,15 @@
 	}
 	.sentence-info-box-link {
 		position: relative;
+		top: 10px;
+		@media (max-width: 1600px) {
+			top: auto;
+			margin-bottom: 15px;
+			margin-left: 15px;
+		}
 		a {
 			img {
-				height: 30px;
+				height: 40px;
 			}
 		}
 	}
@@ -88,7 +94,8 @@
 	.price_for_m {
 		font: 20px 'gilroy-bold';
 		padding: 15px 20px;
-		line-height: 18px;
+		display: flex;
+		align-items: center;
 		background: linear-gradient(92.3deg, #FE4C4C 1.96%, #FF7E21 96.6%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -128,7 +135,7 @@
 		border-radius: 30px 0px 0px 30px;
 		position: absolute;
 		padding: 5px 8px;
-		top: 70px;
+		top: 50px;
 		right: 0;
 		transition: .3s;
 		text-align: right;
@@ -199,6 +206,12 @@
 			right: 0;
 		}
 	}
+	.sentence-img {
+		height: 360px;
+		@media (max-width: 1800px) {
+			height: 400px;
+		}
+	}
 }
 .sentence-img-slider {
 	height: 100%;
@@ -211,13 +224,15 @@
 	}
 }
 
-@media (max-width: 1600px) {
+
 	.hide-sentence-plikta {
-		.sentence-info-box {
-			flex: 0 0 16%;
+			@media (max-width: 1600px) {
+			.sentence-info-box {
+				flex: 5% 5%;
+			}
 		}
 	}
-}
+
 @media (max-width: 1600px) {
 	.hide-sentence-plikta {
 		.price-box {
@@ -239,11 +254,17 @@
 .sentence-info-box:nth-child(6) {
 	position: relative;
 	left: 18px;
+	@media (max-width: 1600px) {
+		left: 0;
+	}
 }
 
 .sentence-info-box:nth-child(7) {
 	position: relative;
 	left: 35px;
+	@media (max-width: 1600px) {
+		left: 0;
+	}
 }
 
 

@@ -4,7 +4,7 @@
     background: url(../img/home/help/help-bg.png) no-repeat center center;
     background-size: cover;
     border-radius: 30px;
-    height: 290px;
+    height: 270px;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -60,10 +60,13 @@
     }
     .helper {
         position: absolute;
-        left: 2%;
+        left: 6%;
         bottom: 0;
         height: auto;
         max-width: 100%;
+        @media (max-width: 1800px) {
+            left: 2%;
+        }
         @media (max-width: 1600px) {
             left: 0;
             height: 300px;
@@ -101,7 +104,7 @@
     }
     .help-title {
         text-shadow: -17px 3px 43px #FFFFFF;
-        color: #ff871b;
+        color: #FF7E21;
         font: 3rem "gilroy-bold";
         margin-bottom: 20px;
         @media (max-width: 990px) {

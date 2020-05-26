@@ -235,11 +235,11 @@ nav {
         padding: 10px 15px;
         background: #FFF;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, .25);
-        top: 30px;
+        top: 60px;
         border-radius: 10px;
         left: -70px;
         pointer-events: none;
-        width: 360px;
+        width: 390px;
         transition: .2s;
         .sub-wrap {
             display: flex;
@@ -266,8 +266,8 @@ nav {
             border-right: 1px solid #00BDFF;
             p {
                 margin-bottom: 10px;
-                width: 80px;
-                font: .9rem "gilroy-light";
+                width: 90px;
+                font: 1rem "gilroy-light";
                 color: #2591F4;
                 cursor: pointer;
                 z-index: 99;
@@ -283,16 +283,16 @@ nav {
             padding-bottom: 10px;
             z-index: 0;
             .sub-title {
-                font:  1rem "gilroy-bold";
+                font:  1.125rem "gilroy-bold";
                 margin-bottom: 10px;
             }
             .sub-text {
-                font:  1rem "gilroy-medium";
+                font:  1.125rem "gilroy-medium";
                 margin-bottom: 25px;
             }
             a {
                 padding: 5px 12px;
-                font-size: .9rem;
+                font-size: 1rem;
             }
             .btn-gold {
                 display: inline-block;
@@ -435,7 +435,7 @@ nav {
             font: .75rem "gilroy-medium";
             background: #fff;
             border-radius: 10px;
-            top: 35px;
+            top: 40px;
             opacity: 0;
             transition: .3s;
             left: -35px;
@@ -503,7 +503,7 @@ nav {
         padding: 5px 40px;
     }
     .head-wraper { 
-        max-width: 1600px;
+        max-width: 1675px;
         width: 100%;
         margin: 0 auto;
     }

@@ -195,6 +195,42 @@ $(document).ready(function() {
         mainClass: 'my-mfp-zoom-in'
     });
 
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    
+    $('.slider-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
+        vertical: true,
+        verticalSwiping: true,
+        responsive: [{
+            breakpoint: 1400,
+            settings: {
+                vertical: false,
+                verticalSwiping: false,
+            }
+        }, {
+            breakpoint: 576,
+            settings: {
+                vertical: false,
+                verticalSwiping: false,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '40px',
+            }
+        }, ]
+    });
+
     var $range = $(".js-range-slider"),
     $input = $(".js-input"),
     instance,

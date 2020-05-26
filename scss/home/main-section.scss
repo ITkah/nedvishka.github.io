@@ -3,8 +3,17 @@
 .main-section-container {
     background-size: cover;
     border-radius: 30px;
-    height: 600px;
+    height: 760px;
     position: relative;
+    @media (max-width: 1800px) {
+        height: 700px;
+    }
+    @media (max-width: 1600px) {
+        height: 650px;
+    }
+    @media (max-width: 1400px) {
+        height: 550px;
+    }
     @media (max-width: 768px) {
         height: 320px;
         border-radius: 20px;
@@ -15,7 +24,10 @@
     .slick-dots {
         display: flex;
         left: 15px;
-        bottom: 130px;
+        bottom: 30%;
+        @media (max-width: 1400px) {
+            bottom: 15%;
+        }
         @media (max-width: 768px) {
             bottom: 35px;
             left: 5px;
@@ -45,7 +57,7 @@
     align-items: flex-start;
     justify-content: center;
     max-width: 450px;
-    top: 35%;
+    top: 32%;
     position: relative;
     @media (max-width: 768px) {
         max-width: 100%;

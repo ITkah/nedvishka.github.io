@@ -581,12 +581,19 @@ $(document).ready(function() {
         arrows: true,
         infinite: true,
         speed: 600,
-        slidesToShow: 5,
+        slidesToShow: 6,
         slidesToScroll: 2,
         centerMode: true,
         centerPadding: '40px',
         responsive: [{
                 breakpoint: 1800,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 1600,
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 2
