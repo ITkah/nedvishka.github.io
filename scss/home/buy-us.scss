@@ -6,9 +6,18 @@
     border-radius: 30px;
     overflow: hidden;
     position: relative;
+    @media (max-width: 990px) {
+        border-radius: 20px;
+    }
     @media (max-width: 576px) {
         padding: 15px 10px;
         padding-bottom: 60px;
+    }
+    .slick-slide {
+        margin: 0 10px;
+        @media (max-width: 990px) {
+            margin: 0;
+        }
     }
     .slick-prev:before {
         content: url(../img/icon/left.svg);
@@ -16,28 +25,24 @@
     .slick-next:before {
         content: url(../img/icon/right.svg);
     }
-    .slick-prev:before, .slick-next:before {
+    .slick-prev:before,
+    .slick-next:before {
         font-size: 0;
         opacity: 1;
     }
     .slick-prev {
-        opacity: 0;
         z-index: 2;
         right: 70px;
         left: auto;
-        top: -40px;
+        top: -55px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
         background: #fff;
-        display: none;
+        display: flex;
         align-items: center;
         justify-content: center;
         height: 30px;
         width: 30px;
         border-radius: 50%;
-        @media (max-width: 1600px) {
-            display: flex;
-            opacity: 1;
-        }
         @media (max-width: 576px) {
             top: auto;
             right: auto;
@@ -45,30 +50,25 @@
             left: 39%;
         }
         @media (max-width: 380px) {
-            left: 37%;
+            left: 38%;
         }
         @media (max-width: 360px) {
-            left: 33%;
+            left: 35%;
         }
     }
     .slick-next {
         z-index: 2;
-        opacity: 0;
         right: 30px;
         left: auto;
-        top: -40px;
+        top: -55px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.21);
         background: linear-gradient(90.19deg, #FE4C4C 1.96%, #FF7E21 96.6%);
-        display: none;
+        display: flex;
         align-items: center;
         justify-content: center;
         height: 30px;
         width: 30px;
         border-radius: 50%;
-        @media (max-width: 1600px) {
-            display: flex;
-            opacity: 1;
-        }
         @media (max-width: 576px) {
             top: auto;
             right: auto;
@@ -76,32 +76,30 @@
             left: 51%;
         }
         @media (max-width: 380px) {
-            left: 50%;
+            left: 51%;
         }
         @media (max-width: 360px) {
-            left: 52%;
+            left: 50%;
         }
     }
     .palm-1 {
         position: absolute;
-        top: -30px;
-        left: 25%;
+        top: -40px;
+        left: 36%;
         @media (max-width: 990px) {
-            height:90px;
-            left: -70px;
+            left: auto;
+            right: 0;
             top: 45px;
-            transform: rotate(-60deg);
         }
     }
     .palm-2 {
         position: absolute;
-        top: -60px;
+        top: -100px;
         right: 10%;
         @media (max-width: 990px) {
-            height: 120px;
-            right: -90px;
+            right: auto;
+            left: 0;
             top: 30px;
-            transform: rotate(80deg);
         }
     }
     .palm-3 {
@@ -109,7 +107,8 @@
         bottom: -100px;
         left: 3%;
         @media (max-width: 990px) {
-            display: none;
+            left: -20px;
+            bottom: -10px;
         }
     }
     .palm-4 {
@@ -196,6 +195,10 @@
                 height: 140px;
                 width: 140px;
                 object-fit: cover;
+                @media (max-width: 800px) {
+                    height: 100px;
+                    width: 100px;
+                }
                 @media (max-width: 576px) {
                     height: 135px;
                     width: 135px;
@@ -221,7 +224,7 @@
                 }
             }
             .name {
-                font:  1.5rem "gilroy-medium";
+                font: 1.5rem "gilroy-medium";
                 color: #151515;
                 text-align: right;
                 @media (max-width: 576px) {
@@ -249,8 +252,11 @@
         p {
             color: #4F4F4F;
             font: 1.125rem/23px "gilroy-medium";
+            height: 70px;
+            overflow: hidden;
             @media (max-width: 1280px) {
                 font-size: .95rem;
+                height: 55px;
                 line-height: 18px;
             }
         }
@@ -261,7 +267,7 @@
             font-style: italic;
             cursor: pointer;
             @media (max-width: 1280px) {
-                font-style: .95rem;
+                font-size: .95rem;
             }
         }
     }
@@ -486,5 +492,6 @@
         margin: 0 10px;
     }
 }
+
 
 /* Главная купить конец */

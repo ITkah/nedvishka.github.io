@@ -16,8 +16,12 @@
 		-webkit-text-fill-color: transparent;
 		margin-left: 30px;
 		font: 2rem 'gilroy-exbold';
-		white-space: nowrap;
 		margin-bottom: 20px;
+		width: 600px; 
+		white-space: nowrap; 
+		overflow: hidden; 
+		text-overflow: ellipsis;
+		display: block;
 	}
 	.link-map {
 		display: block;

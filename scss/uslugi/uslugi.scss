@@ -1,0 +1,293 @@
+
+.uslugi-text {
+    color: #4F4F4F;
+    font: 1.3rem/26px 'gilroy-medium';
+    @media (max-width: 990px) {
+        font: 1rem/20px 'gilroy-medium';
+    }
+}
+
+.uslugi-container {
+    padding: 15px 25px;
+    background: #fff;
+    border-radius: 30px;
+    position: relative;
+    @media (max-width: 990px) {
+        max-width: 100%;
+        padding: 15px 10px;
+        border-radius: 20px;
+    }
+    ul {
+        margin: 5px 0;
+        li {
+            color: #4F4F4F;
+            font: 1.3rem/26px 'gilroy-medium';
+            padding-left: 20px;
+            position: relative;
+            @media (max-width: 990px) {
+                font: 1rem/20px 'gilroy-medium';
+            }
+            &::before {
+                content: url(../img/uslugi/check.svg);
+                position: absolute;
+                left: 0;
+                top: 1px;
+            }
+        }
+    }
+    .title-sm {
+        @media (max-width: 990px) {
+            margin-bottom: 15px;
+        }
+    }
+    .btn-gold {
+        display: block;
+        width: 155px;
+        text-align: center;
+        margin: 30px auto;
+        @media (max-width: 990px) {
+            margin: 15px auto;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 576px) {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2rem;
+            box-sizing: border-box;
+        }
+    }
+    .uslugi-wrap {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 9;
+        @media (max-width: 990px) {
+            flex-direction: column;;
+        }
+    }
+    .uslugi-text-box {
+        width: 48%;
+        @media (max-width: 990px) {
+            width: 100%;
+        }
+    }
+    .uslugi-img-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        flex-direction: column;
+        width: 48%;
+        margin-bottom: 30px;
+        @media (max-width: 990px) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+.uslugi-1 {
+    .uslugi-text {
+        max-width: 800px;
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 8;
+        @media (max-width: 990px) {
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+    .palm-1 {
+        position: absolute;
+        left: 38%;
+        top: 0;
+        @media (max-width: 990px) {
+            top: auto;
+            height: 75px;
+            bottom: 20%;
+            right: -95px; 
+            left: auto;
+            transform: rotate(110deg);
+        }
+    }
+    .palm-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media (max-width: 990px) {
+           height: 70px;
+           right: -50px;
+           top: 0; 
+        }
+    }
+}
+
+.uslugi-2 {
+    .palm-1 {
+        position: absolute;
+        left: 38%;
+        top: 0;
+        @media (max-width: 990px) {
+            height: 85px;
+            right: -65px;
+            top: 18%;
+            transform: rotate(-250deg);
+            left: auto;  
+        }
+    }
+    .palm-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media (max-width: 990px) {
+           height: 95px;
+           right: -65px;
+           top: 0;
+        }
+    }
+    .palm-3 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @media (max-width: 990px) {
+            height: 95px;
+            right: -65px;
+            bottom: 24%;
+            transform: rotate(-180deg);
+            left: auto;  
+        }
+    }
+    .palm-4 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media (max-width: 990px) {
+            height: 95px;
+            right: -80px;
+            bottom: 50%;
+        }
+    }
+    .uslugi-wrap {
+        @media (max-width: 990px) {
+            flex-direction: column-reverse;
+        }
+    }
+    .uslugi-img-box {
+        img {
+            @media (max-width:576px) {
+                height: 230px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+
+.uslugi-3 {
+    .uslugi-img-box {
+        img {
+            @media (max-width:576px) {
+                height: 230px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+    }
+    .palm-1 {
+        position: absolute;
+        left: 38%;
+        top: 0;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .palm-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media (max-width: 990px) {
+            height: 80px;
+            right: -60px;
+            top: 10px;
+        }
+    }
+    .palm-3 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @media (max-width: 990px) {
+            left: auto;
+            right: -20px;
+            bottom: 25%;
+            height: 100px;
+            transform: rotate(-90deg);
+        }
+    }
+    .palm-4 {
+        position: absolute;
+        left: 35%;
+        bottom: 0;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .uslugi-wrap {
+        @media (max-width: 990px) {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.uslugi-4 {
+    .uslugi-img-box {
+        img {
+            @media (max-width:576px) {
+                height: 230px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+    }
+    .palm-1 {
+        position: absolute;
+        left: 55%;
+        top: 0;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .palm-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media (max-width: 990px) {
+            height: 95px;
+            right: -25px;
+        }
+    }
+    .palm-3 {
+        position: absolute;
+        right: 40%;
+        bottom: 0;
+        @media (max-width: 990px) {
+           height: 80px;
+           right: -65px;
+           bottom: 20%;
+           transform: rotate(-85deg);
+        }
+    }
+    .palm-4 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media (max-width: 990px) {
+           display: none;
+        }
+    }
+}

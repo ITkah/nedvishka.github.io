@@ -29,6 +29,14 @@
 }
 
 @font-face {
+    font-family: "gilroy-regular";
+    src: url("../fonts/Gilroy-Regular.eot") format("eot"),
+        url("../fonts/Gilroy-Regular.woff2") format("ttf"),
+        url("../fonts/Gilroy-Regular.woff") format("woff");
+}
+
+
+@font-face {
     font-family: "gilroy-light";
     src: url("../fonts/Gilroy-Light.eot") format("eot"),
         url("../fonts/Gilroy-Light.woff2") format("ttf"),

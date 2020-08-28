@@ -32,17 +32,11 @@
         position: absolute;
         right: 20%;
         top: -30px;
-        @media (max-width: 990px) {
-            height: 60px;
-        }
     }
     .palm-2 {
         position: absolute;
         left: 0;
         bottom: 0;
-        @media (max-width: 990px) {
-            height: 40px;
-        }
     }
     .acc-box {
         transition: .3s;
@@ -58,6 +52,7 @@
     
     .acc-head {
         padding: 15px 20px;
+        padding-right: 50px;
         cursor: pointer;
         background: #F9F2F2;
         border-radius: 10px;
@@ -70,6 +65,7 @@
         }
         @media (max-width: 990px) {
             padding: 15px 10px;
+            padding-right: 50px;
         }
         svg {
             right: 20px;
@@ -89,7 +85,7 @@
 
     .acc-body {
         color: #4F4F4F;
-        font: 1rem "gilroy-medium";
+        font: 1.1rem "gilroy-medium";
         padding: 15px 20px;
         display: none;
         background: #fff;
@@ -97,7 +93,7 @@
         margin-bottom: 15px;
         border-radius: 0 0 10px 10px;
         @media (max-width: 990px) {
-            font-size: .9rem;
+            font-size: .87rem;
             padding: 10px;
         }
     }
@@ -120,33 +116,30 @@
     padding: 30px;
     position: relative;
     overflow: hidden;
-    .palm-3 {
+    .palm-1 {
         position: absolute;
-        left: 0;
+        right: -10px;
+        display: block;
+        top: -5px;
+    }
+    .palm-2 {
+        position: absolute;
+        left: -20px;
         bottom: 20%;
         @media (max-width: 990px) {
-            height: 100px;
-            transform: rotate(-20deg);
-            left: -30px;
-            bottom: 100px;
+            left: 0;
+            bottom: 40%;
         }
     }
-    .palm-4 {
+    .palm-3 {
         position: absolute;
-        right: -20px;
+        right: -30px;
+        display: block;
         bottom: -20px;
         @media (max-width: 990px) {
-            height: 80px;
-            right: -40px;
+            right: auto;
             bottom: 0;
-        }
-    }
-    .palm-5 {
-        position: absolute;
-        right: 0;
-        top: 0;
-        @media (max-width: 990px) {
-            height: 60px;
+            left: 0;
         }
     }
     @media (max-width: 990px) {
@@ -175,6 +168,8 @@
         position: relative;
         @media (max-width: 990px) {
             box-sizing: border-box;
+            margin-bottom: 20px;
+            border-radius: 20px;
         }
         .guarantees-title {
             font: 1.2rem 'gilroy-medium';
@@ -222,16 +217,16 @@
     }
     .guarantees-box:nth-child(2) {
         height: 100px;
-        width: 190px;
+        width: 200px;
         position: relative;
         padding: 20px;
         bottom: -30px;
-        left: 30px;
+        left: 20px;
         z-index: 2;
         @media (max-width: 1800px) {
             left: 15px;
         }
-        @media (max-width: 1500px) {
+        @media (max-width: 1600px) {
             height: 80px;
             width: 160px; 
             left: 0;
@@ -240,6 +235,11 @@
         @media (max-width: 1280px) {
             bottom: 0;
             top: 0;
+        }
+        @media (max-width: 1200px) {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 30px 20px;
         }
         @media (max-width: 990px) {
             min-height: 150px;
@@ -252,6 +252,10 @@
             left: -30px;
             color: #fff;
             font: 12rem 'gilroy-bold';
+            @media (max-width: 1200px) {
+                font-size: 8rem;
+                left: 0;
+            }
             @media (max-width: 990px) {
                 left: 0;
                 font-size: 14rem;
@@ -264,9 +268,14 @@
         position: relative;
         margin-left: auto;
         padding: 20px;
-        @media (max-width: 1500px) {
+        @media (max-width: 1600px) {
             height: 80px;
             width: 160px; 
+        }
+        @media (max-width: 1200px) {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 30px 20px;
         }
         @media (max-width: 990px) {
             min-height: 150px;
@@ -289,15 +298,22 @@
         height: 100px;
         width: 200px;
         position: relative;
-        left: 150px;
+        left: 80px;
         padding: 20px;
         @media (max-width: 1800px) {
             left: 120px;
         }
-        @media (max-width: 1500px) {
+        @media (max-width: 1600px) {
             height: 80px;
             width: 180px; 
             left: 60px;
+        }
+        @media (max-width: 1200px) {
+            width: 100%;
+            box-sizing: border-box;
+            left: 0;
+            margin: 0;
+            padding: 30px 20px;
         }
         @media (max-width: 990px) {
             min-height: 150px;

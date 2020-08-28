@@ -146,13 +146,5 @@ $(document).ready(function() {
         mainClass: 'my-mfp-zoom-in'
     });
 
-    jQuery(window).scroll(function() {
-        var the_top = jQuery(document).scrollTop();
-        if (the_top > 250) {
-            jQuery('.simple-block .simple-form-favorite').addClass('fixed');
-        } else {
-            jQuery('.simple-block .simple-form-favorite').removeClass('fixed');
-        }
-    });
 
 });

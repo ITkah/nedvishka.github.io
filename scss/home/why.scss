@@ -1,5 +1,5 @@
-
 /* Главная почему мы начало */
+
 .why-container {
     background: #fefdfc;
     border-radius: 30px;
@@ -15,7 +15,13 @@
             position: absolute;
             top: 500px;
             z-index: 9;
-            left: 44%;
+            left: 47%;
+        }
+        @media (max-width: 576px) {
+            top: 465px;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
         }
     }
     .palm-1 {
@@ -26,7 +32,7 @@
             height: 100px;
             z-index: 8;
             top: 500px;
-            right: -40px;
+            right: -10px;
         }
     }
     .palm-2 {
@@ -34,10 +40,10 @@
         @media (max-width: 990px) {
             display: block;
             position: absolute;
-            height: 100px;
             z-index: 8;
             bottom: 700px;
-            right: -40px;
+            left: 0;
+            top: 30%;
         }
     }
     .palm-3 {
@@ -45,11 +51,9 @@
         @media (max-width: 990px) {
             display: block;
             position: absolute;
-            height: 100px;
             z-index: 8;
-            bottom: 150px;
-            left: -40px;
-            transform: rotate(90deg);
+            bottom: 20%;
+            right: -20px;
         }
     }
     .palm-4 {
@@ -57,11 +61,9 @@
         @media (max-width: 990px) {
             display: block;
             position: absolute;
-            height: 100px;
             z-index: 8;
             bottom: 1000px;
-            left: -40px;
-            transform: rotate(90deg);
+            left: -5px;
         }
     }
     .title-sm {
@@ -71,10 +73,14 @@
         @media (max-width: 990px) {
             padding: 15px;
         }
+        @media (max-width: 576px) {
+            padding-bottom: 0;
+            margin-bottom: 30px;
+        }
     }
     .cload-top {
         position: absolute;
-        top: 25px;
+        top: 60px;
         left: 0;
         right: 0;
         width: 100%;
@@ -83,7 +89,12 @@
             top: 60px;
         }
         @media (max-width: 990px) {
-            top: 60px;
+            top: 50px;
+        }
+        @media (max-width: 576px) {
+            top: 45px;
+            left: 0;
+            width: 100%;
         }
     }
     .panorama-scroll {
@@ -94,6 +105,9 @@
             position: relative;
             overflow-x: scroll;
             overflow-y: hidden;
+        }
+        @media (max-width: 576px) {
+            margin-bottom: -50px;
         }
     }
     .panorama {
@@ -113,51 +127,99 @@
         }
     }
     @keyframes scroll-anim {
-        0% {transform: translateX(0);}
-        5%{transform: translateX(-40px);}
-        10%{transform: translateX(-80px);}
-        15%{transform: translateX(-120px);}
-        20%{transform: translateX(-170px);}
-        25%{transform: translateX(-210px);}
-        30%{transform: translateX(-250px);}
-        35%{transform: translateX(-290px);}
-        40%{transform: translateX(-330px);}
-        45%{transform: translateX(-370px);}
-        50%{transform: translateX(-375px);}
-        55%{transform: translateX(-370px);}
-        60%{transform: translateX(-330px);}
-        65%{transform: translateX(-290px);}
-        70%{transform: translateX(-250px);}
-        75%{transform: translateX(-210px);}
-        80%{transform: translateX(-170px);}
-        85%{transform: translateX(-120px);}
-        90%{transform: translateX(-80px);}
-        95%{transform: translateX(-40px);}
-        100%{transform: translateX(0);}
+        0% {
+            transform: translateX(0);
+        }
+        5% {
+            transform: translateX(-40px);
+        }
+        10% {
+            transform: translateX(-80px);
+        }
+        15% {
+            transform: translateX(-120px);
+        }
+        20% {
+            transform: translateX(-170px);
+        }
+        25% {
+            transform: translateX(-210px);
+        }
+        30% {
+            transform: translateX(-250px);
+        }
+        35% {
+            transform: translateX(-290px);
+        }
+        40% {
+            transform: translateX(-330px);
+        }
+        45% {
+            transform: translateX(-370px);
+        }
+        50% {
+            transform: translateX(-375px);
+        }
+        55% {
+            transform: translateX(-370px);
+        }
+        60% {
+            transform: translateX(-330px);
+        }
+        65% {
+            transform: translateX(-290px);
+        }
+        70% {
+            transform: translateX(-250px);
+        }
+        75% {
+            transform: translateX(-210px);
+        }
+        80% {
+            transform: translateX(-170px);
+        }
+        85% {
+            transform: translateX(-120px);
+        }
+        90% {
+            transform: translateX(-80px);
+        }
+        95% {
+            transform: translateX(-40px);
+        }
+        100% {
+            transform: translateX(0);
+        }
     }
     .cload-bottom {
         position: absolute;
-        bottom: 50px;
+        bottom: 60px;
         left: 0;
         right: 0;
         width: 100%;
         z-index: 2;
         @media (max-width: 1400px) {
-            bottom: 120px;
+            bottom: 100px;
         }
         @media (max-width: 990px) {
             top: 440px;
             bottom: auto;
             height: 60px;
         }
+        @media (max-width: 576px) {
+            top: 420px;
+            width: 100%;
+            left: 0;
+            height: 75px;
+        }
     }
     .why-box {
         background: url(../img/home/why/letter.png) no-repeat center center;
         background-size: contain;
-        height: 160px;
+        height: 180px;
         position: relative;
-        z-index: 3;
-        margin: 0 20px 40px 20px;
+        z-index: 9;
+        margin: 0 20px 20px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -169,16 +231,23 @@
             margin: 20px;
             background: transparent;
         }
-        .why-box-img:nth-child(2n+1){
+        .why-box-img:nth-child(2n+1) {
             position: relative;
-            top: -60px;
+            top: -50px;
+            @media (max-width: 1280px) {
+                top: -25px;
+            }
             @media (max-width: 990px) {
                 top: 0;
+                flex-direction: column;
             }
         }
-        .why-box-img:nth-child(2n+2){
+        .why-box-img:nth-child(2n+2) {
             position: relative;
             top: -60px;
+            @media (max-width: 1280px) {
+                top: -30px;
+            }
             @media (max-width: 990px) {
                 top: 0;
                 flex-direction: column-reverse;
@@ -197,8 +266,8 @@
             }
             @media (max-width: 990px) {
                 opacity: 1;
-                font-size: 1.125rem;
-                line-height: 32px;
+                font-size: 1rem;
+                line-height: 24px;
             }
             span {
                 color: #12cad6;
@@ -210,6 +279,9 @@
             position: relative;
             align-items: center;
             cursor: pointer;
+            @media (max-width: 990px) {
+                flex-direction: column-reverse;
+            }
             &:hover {
                 .why-text {
                     opacity: 1;
@@ -230,14 +302,14 @@
                 }
             }
         }
-        .why-box-img:first-child{
+        .why-box-img:first-child {
             left: 0;
             position: relative;
             @media (max-width: 1200px) {
                 left: 0;
             }
         }
-        .why-box-img:last-child{
+        .why-box-img:last-child {
             right: 0;
             position: relative;
             @media (max-width: 1200px) {
@@ -246,5 +318,6 @@
         }
     }
 }
+
 
 /* Главная почему мы начало конец */

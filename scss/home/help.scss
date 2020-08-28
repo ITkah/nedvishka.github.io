@@ -12,14 +12,15 @@
     @media (max-width: 576px) {
         background: url(../img/home/help/help-mob.png) no-repeat center center;
         background-size: cover;
+        border-radius: 20px;
     }
     .palm-1 {
         display: none;
         @media (max-width: 576px) {
             display: block;
             position: absolute;
-            right: 20px;
-            top: -10px;
+            right: 0;
+            top: 0;
         }
     }
     &::before {
@@ -30,13 +31,14 @@
         right: 0;
         top: 0;
         bottom: 0;
-        background: rgba(255,255,255,0.5);
+        background: rgba(255, 255, 255, .75);
         border-radius: 30px;
         opacity: 0;
         transition: .3s;
         @media (max-width: 576px) {
             mix-blend-mode: screen;
-            opacity: 1;
+            opacity: .75;
+            border-radius: 20px;
         }
     }
     &:hover {
@@ -49,6 +51,9 @@
         .help-btn {
             opacity: 1;
         }
+        .help-title {
+            text-shadow: none;
+        }
     }
     @media (max-width: 1280px) {
         background-position: left;
@@ -60,19 +65,19 @@
     }
     .helper {
         position: absolute;
-        left: 6%;
-        bottom: 0;
+        left: 0%;
+        bottom: -2%;
         height: auto;
         max-width: 100%;
         @media (max-width: 1800px) {
-            left: 2%;
+            left: -5%;
         }
         @media (max-width: 1600px) {
-            left: 0;
+            left: -6%;
             height: 300px;
         }
-        @media (max-width: 1100px) {
-            left: -20px;
+        @media (max-width: 1200px) {
+            left: -10%;
             height: 250px;
         }
         @media (max-width: 990px) {
@@ -86,6 +91,7 @@
             position: absolute;
             left: 10px;
             bottom: 0;
+            height: 300px;
         }
     }
     .help-bloc-text {
@@ -94,8 +100,11 @@
         justify-content: center;
         position: relative;
         z-index: 2;
-        @media (max-width: 1400px) {
+        @media (max-width: 1600px) {
             right: -100px;
+        }
+        @media (max-width: 1400px) {
+            right: -150px;
         }
         @media (max-width: 990px) {
             right: 0;
@@ -103,7 +112,7 @@
         }
     }
     .help-title {
-        text-shadow: -17px 3px 43px #FFFFFF;
+        text-shadow: 2px 2px 8px rgb(71, 71, 71);
         color: #FF7E21;
         font: 3rem "gilroy-bold";
         margin-bottom: 20px;
@@ -111,7 +120,8 @@
             font-size: 1.875rem;
             text-align: left;
             color: #fe5148;
-            line-height: 25px;
+            line-height: 28px;
+            text-shadow: none;
         }
         br {
             display: none;
@@ -148,8 +158,8 @@
             opacity: 1;
             width: 250px;
             box-sizing: border-box;
-            padding: 20px;
-            font-size: 1.25rem;
+            padding: 15px;
+            font-size: 1.2rem;
         }
         @media (max-width: 450px) {
             width: 100%;
@@ -159,5 +169,6 @@
         }
     }
 }
+
 
 /* Главная помощь конец */

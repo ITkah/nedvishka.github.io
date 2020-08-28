@@ -30,11 +30,7 @@ $(document).ready(function() {
         $(this).next(".modal-box-input").slideToggle(200);
     });
 
-    $(".logo-qviz").on("click", function() {
-        $(".warning").slideToggle(100);
-    });
-
-    $(".call-mob").on("click", function() {
+    $(".qviz-title-box").on("click", function() {
         $(".warning").slideToggle(100);
     });
 
@@ -52,13 +48,10 @@ $(document).ready(function() {
             fade: true,
             cssEase: 'linear',
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
         });
     });
 
-    $(".qviz-title-box").on("hover", function() {
-        $(".warning").fadeToggle(150);
-    });
 
     $(".menu").on("click", function() {
         $("nav").addClass("nav-active");
@@ -117,11 +110,6 @@ $(document).ready(function() {
         $(this).toggleClass("call-filter-active");
         $(".sub-button-hide").slideToggle(100);
         $(".hide-input-click").slideToggle(100);
-    });
-
-    $(".checkbox label").on("click", function() {
-        $("label").removeClass("active-check");
-        $(this).toggleClass("active-check");
     });
 
     $(".qviz-radio").on("click", function() {
@@ -286,9 +274,6 @@ $(document).ready(function() {
     });
 
 
-
-
-
     var $range3 = $(".js-range-slider3"),
         $inputFrom3 = $(".js-input-from3"),
         $inputTo3 = $(".js-input-to3"),
@@ -348,8 +333,6 @@ $(document).ready(function() {
             to1: val
         });
     });
-
-
 
     var $range4 = $(".js-range-slider4"),
         $inputFrom4 = $(".js-input-from4"),
@@ -541,9 +524,17 @@ $(document).ready(function() {
         centerMode: true,
         centerPadding: '40px',
         speed: 600,
-        slidesToShow: 5,
+        slidesToShow: 6,
         slidesToScroll: 2,
-        responsive: [{
+        responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 2
+                }
+            },
+            {
                 breakpoint: 1280,
                 settings: {
                     slidesToShow: 4,
@@ -573,7 +564,8 @@ $(document).ready(function() {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        adaptiveHeight: true,
     });
 
     $('.sentence-wrap-slider').slick({
@@ -581,7 +573,7 @@ $(document).ready(function() {
         arrows: true,
         infinite: true,
         speed: 600,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 2,
         centerMode: true,
         centerPadding: '40px',
@@ -614,7 +606,7 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 576,
+                breakpoint: 675,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

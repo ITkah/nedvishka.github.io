@@ -1,8 +1,12 @@
 /*Крошки начало*/
 
 .bredcrumbs {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     margin-left: 5px;
+    margin-top: -12px;
+    @media (max-width: 990px) {
+        margin-top: 0;
+    }
 }
 
 .bredcrumbs-wrap {
@@ -35,11 +39,12 @@
         }
     }
     span {
-        color: #000;
+        color: #12B3D6;
         font: .87rem "gilroy-medium";
         position: relative;
         top: 1px;
     }
 }
+
 
 /*КРОШКИ конец*/

@@ -12629,3 +12629,16 @@ textarea {
 
 
 /*Шрифты конец*/
+
+.modal-box-inside input {
+    width: 100px;
+    border-radius: 10px 0 0 10px;
+    pointer-events: none;
+    border: 1px solid #E0E0E0;
+    padding: 29px 8px 6px 8px; }
+  
+  .modal-box-inside:last-child input {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  
